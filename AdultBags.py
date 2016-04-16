@@ -33,6 +33,7 @@ features_to_keep = ["age","education", "race", "sex","hours-per-week","capital-g
 bags = [' Masters',' Bachelors', ' Some-college', ' HS-grad']
 
 #### PATH TO ADULT DATA
+### https://archive.ics.uci.edu/ml/machine-learning-databases/adult/
 path_to_adult_data = ""
 datadf = pd.read_csv(path_to_adult_data, header = None, na_values = ['?'], names = names)
 datadf = datadf[features_to_keep]
